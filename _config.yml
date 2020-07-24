@@ -8,31 +8,31 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 #--------------------------
 
-title: Chirpy                          # the main title
+title: hhexme                          # the main title
 
-tagline: A text-focused Jekyll theme.  # it will display as the sub-title
+tagline: Cyber Security, Hacking, Reverse Engineering are me!  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  Hacking, Cyber Security, Network Security,
+  Exploit Writing, Reverse Engineering and 
+  all other fun stuff!
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: 'protocol://domain'
+url: 'https://hhexme.github.io'
 
-author: your_full_name                  # change to your full name
+author: KB                  # change to your full name
 
-avatar: /assets/img/sample/avatar.jpg   # support internet resources
+avatar: /assets/img/sample/logo-avatar.jpg   # support internet resources
 
 github:
-  username: github_username             # change to your github username
+  username: hhexme             # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: hhexme            # change to your twitter username
 
 social:
-  name: your_full_name                  # it will shows as the copyright owner in Footer
-  email: example@doamin.com             # change to your email address
+  name: KB                  # it will shows as the copyright owner in Footer
+  email: 0xhw@protonmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username      # change to your twitter homepage
@@ -51,7 +51,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 baseurl: ''
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: Asia/Karachi
 
 google_analytics:
   id: ''          # Fill with your Google Analytics ID
@@ -78,7 +78,7 @@ disqus:
 #
 #     dark   - Use the dark color scheme
 #
-theme_mode: dual
+theme_mode: dark
 
 # boolean type, global switch for ToC in posts.
 toc: true
